@@ -16,8 +16,8 @@ public:
 
     T add(T n1, T n2) { return n1 + n2; }
     T subtract(T n1, T n2) { return n1 - n2;}
-    T multiply(T n1, T n2) { return n1 * n2 }
-    T divide(T n1, T n2) { if (n2 != 0) return n1 / n2; }
+    T multiply(T n1, T n2) { return n1 * n2; }
+    T divide(T n1, T n2) { return n1 / n2; }
 };
 
 
