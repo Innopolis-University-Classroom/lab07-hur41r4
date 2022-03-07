@@ -2,20 +2,22 @@
 // the function below now only works with integers, change it to work with any type
 // also fill out the body
 
-public class Calculator {
+
+template <typename T>
+class Calculator {
 private:
     int num1, num2;
 
 public:
-    Calculator(int n1, int n2) {
+    Calculator(T n1, T n2) {
         num1 = n1;
         num2 = n2;
     }
 
-    int add() { return 0; /*your code here*/ }
-    int subtract() { /*your code here*/ }
-    int multiply() { /*your code here*/ }
-    int divide() { /*your code here*/ }
+    T add(T n1, T n2) { return n1 + n2; }
+    T subtract(T n1, T n2) { return n1 - n2;}
+    T multiply(T n1, T n2) { return n1 * n2 }
+    T divide(T n1, T n2) { if (n2 != 0) return n1 / n2; }
 };
 
 
